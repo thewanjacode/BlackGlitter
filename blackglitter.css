@@ -405,7 +405,7 @@ button:hover .star-6 {
 
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -413,7 +413,7 @@ button:hover .star-6 {
 .section-header {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-bottom: 2px solid #333;
   padding-bottom: 0.5rem;
 }
@@ -498,7 +498,7 @@ transform: scale(1.05);
 
 .post-thumbnail .post-title {
  padding: 0.5rem;
- font-size: 1rem;
+ font-size: 0.9rem;
  font-weight: bold;
  color: #e8e7e7;
  text-align: center;
