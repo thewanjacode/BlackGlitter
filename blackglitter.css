@@ -29,12 +29,10 @@ body {
 
 header {
  background-color: rgb(0, 0, 0);
- margin-bottom: 30px;
+ margin-bottom: 10px;
+ margin-top: 20px;
 } 
 
-.pageTitle {
-  margin: 25px;
-}
 
 h1 {
   color: white;
@@ -74,12 +72,9 @@ h4 {
 }
 
 a { 
- color:#000000;
+ color:#ffffff;
  }
 
-.navigation {
-  margin: 40px;
-}
 
 .tagline {
   max-width: 90rem;
@@ -242,7 +237,7 @@ button:hover .star-6 {
   fill: #FFFDEF
 }
 
-/* about page */
+/* About page */
 
 #about {
   background-color: #fff5fb;
@@ -252,6 +247,7 @@ button:hover .star-6 {
 
 .about-page {
   width: 650px;
+  display: inline-block;
 }
 
 /* Footer */
@@ -268,7 +264,7 @@ button:hover .star-6 {
 /* SCROLLBAR */
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
@@ -570,7 +566,7 @@ transform: scale(1.05);
 }
 
 .opportunities-text {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: bold;
   color: hsl(0, 0%, 0%);
   text-align: left;
