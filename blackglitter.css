@@ -18,9 +18,9 @@ body {
   padding: 0;
 }
 
-
 header {
  background-color: rgb(0, 0, 0);
+ margin-bottom: 30px;
 } 
 
 .pageTitle {
@@ -45,7 +45,6 @@ h2 {
   text-align: center;
   display: inline-block;
   margin-top: 0px;
-
 }
 
 h3 {
@@ -56,8 +55,18 @@ h3 {
   text-align: center;
   display: inline-block;
   margin-top: 0px;
-
 }
+
+h4 {
+  color: rgb(255, 255, 255);
+  font-family: "Archivo Black";
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+a { 
+ color:#000000;
+ }
 
 .navigation {
   margin: 40px;
@@ -228,6 +237,12 @@ button:hover .star-6 {
   background-color: #fff5fb;
   color:rgb(255, 39, 197);
   border-color: white;
+}
+
+.about-page {
+  max-width: 700px;
+  display: inline-block; 
+
 
 }
 
@@ -236,6 +251,7 @@ button:hover .star-6 {
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: 30px;
 }
 
 
@@ -317,7 +333,7 @@ button:hover .star-6 {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
-  display: inline-block;
+  c
   width: 650px;
 }
 
@@ -515,4 +531,56 @@ transform: scale(1.05);
   .post-thumbnail {
       width: 100%;
   }
+}
+
+/* Opportunities*/
+
+.opportunities-tagline {
+  margin-bottom: 50px;
+}
+
+.container2 {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  border-style: solid;
+  border-color: #e31c80;
+  border-radius: 8px;
+  border-width: 0.1rem;
+  background-color: #e31c80;
+  box-shadow: 2px 2px 2px #ffffff;
+
+}
+
+.opportunities-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #f49bcac0;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+.opportunities-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 0%);
+  text-align: left;
+}
+
+.star-bullets {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0;
+}
+
+.star-bullets li {
+  position: relative;
+  padding-left: 1.5em; 
+}
+
+.star-bullets li::before {
+  content: '★'; 
+  position: absolute;
+  left: 0; 
+  color: #ffffff; 
 }
