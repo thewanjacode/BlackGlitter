@@ -14,6 +14,15 @@ body {
   display: inline-block;
 }
 
+#main-logo {
+  width: 90%;
+  min-width: 400px;
+  height: 50%;
+  display: inline-block;
+  padding: 40px;
+
+}
+
 #title-cont {
   padding: 0;
 }
@@ -233,6 +242,8 @@ button:hover .star-6 {
   fill: #FFFDEF
 }
 
+/* about page */
+
 #about {
   background-color: #fff5fb;
   color:rgb(255, 39, 197);
@@ -240,11 +251,10 @@ button:hover .star-6 {
 }
 
 .about-page {
-  max-width: 700px;
-  display: inline-block; 
-
-
+  width: 650px;
 }
+
+/* Footer */
 
 .footer {
   color:#fff;
@@ -333,7 +343,6 @@ button:hover .star-6 {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
-  c
   width: 650px;
 }
 
