@@ -237,6 +237,9 @@ button:hover .star-6 {
   fill: #FFFDEF
 }
 
+/* Download button */
+
+
 /* About page */
 
 #about {
@@ -336,11 +339,34 @@ button:hover .star-6 {
   box-sizing: border-box;
 }
 
+/* Download button */
+
+.download-btn {
+  display: flex;
+  justify-content: right;
+}
+
+#downloads {
+  background-color: #ffffff;
+  width: 40px;
+  border-radius: 100px;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#downloads:hover {
+  background-color: #be0370;
+}
+
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
   width: 650px;
 }
+
 
 /* Hide the images by default */
 .mySlides {
@@ -357,7 +383,7 @@ button:hover .star-6 {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 30%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
