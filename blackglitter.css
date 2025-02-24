@@ -16,21 +16,23 @@ body, html {
 }
 
 #main-logo {
-  max-width: 80%;
-  min-width: 400px;
-  height: 50%;
+  max-width: 75%;
+  min-width: 300px;
+  height: 100%;
   display: inline-block;
   margin-top: 30px;
   margin-bottom: 15px;
 
 }
 
-@media only screen and (max-width: 768px) {
-  #main-logo #miniLogo {
-      width: 60%; 
-      margin-bottom: 20px;
+@media only screen and (max-width: 600px) {
+  #main-logo {
+      max-width: 150px;
+      margin: 0 auto; 
+      display: block;
   }
 }
+
 
 #title-cont {
   padding: 0;
