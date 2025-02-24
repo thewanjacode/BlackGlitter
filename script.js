@@ -28,3 +28,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+// Add swipe support for touch devices
+let startX = 0;
+
+document.querySelector('.container').addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+document.querySelector('.container').addEventListener('touchend', (e) => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX > endX + 50) {
+        plusSlides(1); // Swipe left
+    } else if (startX < endX - 50) {
+        plusSlides(-1); // Swipe right
+    }
+});
