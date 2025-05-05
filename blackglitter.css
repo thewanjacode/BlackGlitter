@@ -108,6 +108,18 @@ a {
   margin: 20px;
 }
 
+.signature {
+font-size: 0.8rem;
+}
+
+.bottomButtons {
+  margin-top: 100px;
+}
+
+#about {
+  font-size: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
   section {
       padding: 20px;
@@ -129,11 +141,6 @@ a {
   }
 }
 
-#about {
-  background-color: #ffffff;
-  color: #e31c80;
-  border-width: 2px;
-}
 
 /* Button*/
 
@@ -317,12 +324,22 @@ img {
   width: 700px;
 }
 
+#socialLink {
+ display: flex;
+ justify-content:center;
+}
+
+#socialLinkImg {
+  max-width: 9%;
+}
+
 
 /* Footer */
 
 footer {
   color:#fff;
   padding: 10px;
+  font-size: 0.8rem;
   text-align: center;
 }
 
@@ -600,8 +617,8 @@ footer {
 .featured-post-title {
   font-size: 1.5rem;
   font-weight: bold;
-  text-shadow: 2px 2px 2px #fb8600c0;
-  color: #d3d3d3;
+  text-shadow: 2px 2px 2px #e31c80;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
@@ -685,31 +702,32 @@ footer {
 
 .opportunities-tagline {
   margin-bottom: 50px;
+  font-size: 1.5rem;
 }
 
 .container2 {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 30px;
+  padding-bottom: 40px;
   border-style: solid;
   border-color: #e31c80;
   border-radius: 8px;
   border-width: 0.1rem;
-  background-color: #ffffff;
-  box-shadow: 2px 2px 2px #ffffff;
+  background-color: #000000;
+  box-shadow: 2px 2px 2px #393939;
 
 }
 
 .opportunities-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  text-shadow: 2px 2px 2px #ff75bec0;
-  color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
   margin-bottom: 1rem;
 }
 
 .opportunities-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 0%);
   text-align: left;
