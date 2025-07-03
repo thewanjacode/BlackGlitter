@@ -630,6 +630,8 @@ footer {
 }
 
 .featured-post-excerpt {
+  font-family: "Montserrat";
+  line-height: 1.3;
   font-size: 0.9rem;
   color: #ffffff;
 }
