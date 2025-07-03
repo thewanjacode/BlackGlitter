@@ -20,10 +20,10 @@ body, html {
   min-width: 300px;
   height: auto;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 15px;
-
 }
+
 
 @media only screen and (max-width: 600px) {
   #main-logo {
@@ -39,12 +39,28 @@ body, html {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   padding: 10px;
 } 
 
+.custom-header {
+  display: flex;
+  justify-content:space-between;
+  position: relative;
+  margin: 0px 30px;
+}
+
+.custom-header button{
+  padding: 6px 12px;
+  font-size: 1rem;
+
+}
+#miniLogo {
+  max-width: 90px;
+  padding: 7px;
+  height: auto;
+  display: block;
+}
 
 h1 {
   color: white;
@@ -89,7 +105,7 @@ a {
 
 .tagline {
   max-width: 90rem;
-  margin: 30px 0px;
+  margin: 20px 0px;
   text-align: center;
 }
 
@@ -98,10 +114,6 @@ a {
   padding: 8px;
   margin: 30px 0px;
   font-size: 1rem;
-}
-
-.buttonsNav {
- margin: 10px;
 }
 
 #title {
@@ -363,11 +375,6 @@ footer {
 }
 
 /* INTERVIEWS */
-
-#miniLogo {
-    max-width: 100px;
-    display:inline-block;
-  }
 
 .card-container {
     display: grid;
@@ -700,53 +707,120 @@ footer {
 
 /* Opportunities*/
 
-.opportunities-tagline {
-  margin-bottom: 50px;
-  font-size: 1.5rem;
-}
-
 .container2 {
-  max-width: 600px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 30px;
-  padding-bottom: 40px;
-  border-style: solid;
-  border-color: #e31c80;
-  border-radius: 8px;
-  border-width: 0.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Opportunity Section */
+.opportunity-section {
   background-color: #000000;
-  box-shadow: 2px 2px 2px #393939;
-
+  padding: 1.5rem;
+}
+.opportunity-segment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 18px;
+  border-radius: 9px;
+  border: 1px solid #fff;
+  margin: 20px 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
-.opportunities-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: hsl(0, 0%, 100%);
-  margin-bottom: 1rem;
+.section-heading{
+  font-size: 1.3rem;
+  margin:0px;
+}
+.opportunity-title {
+  font-size: rem;
+  font-weight: 500;
+  flex: 1;
+  color: #fff;
 }
 
-.opportunities-text {
-  font-size: 1rem;
-  font-weight: bold;
-  color: hsl(0, 0%, 0%);
-  text-align: left;
+.learn-more-btn {
+  background-color: transparent;
+  color: #e31c80;
+  border: 1px solid #e31c80;
+  padding: 6px 12px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+  white-space: nowrap;
 }
 
-.star-bullets {
-  list-style-type: none; 
-  padding: 0; 
+.learn-more-btn:hover {
+  background-color: #e31c80;
+  border-color: rgb(199, 199, 199);
+  color: #fff;
+}
+
+.opportunity-list {
+  list-style-type: none;
+  padding-left: 0;
   margin: 0;
 }
 
-.star-bullets li {
-  position: relative;
-  padding-left: 1.5em; 
+.opportunity-list li {
+  margin-bottom: 0.75rem;
 }
 
-.star-bullets li::before {
-  content: '★'; 
-  position: absolute;
-  left: 0; 
-  color: #e31c80;
+.opportunity-deadline-badge {
+ background-color: #3a3a3a; /* red */
+  color: rgb(255, 255, 255);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  display: inline-block;
+  margin-top: 4px;
+  width: fit-content;
+}
+
+@media (max-width: 500px) {
+  .opportunity-segment {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .learn-more-btn {
+    margin-left: 0;
+  }
+}
+
+/*Articles */
+
+.article-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.article-notice {
+  display:inline-block;
+  justify-content: center;
+  max-width: 500px;
+  align-items: center;
+  background-color: #000;
+  padding: 100px 180px;
+  border-radius: 9px;
+  border: 1px solid #fff;
+  margin: 20px 10px;
+  font-family: "Montserrat", sans-serif;
 }
