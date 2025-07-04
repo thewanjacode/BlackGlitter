@@ -2,6 +2,21 @@
   --color: #e31c80;
 }
 
+@font-face {
+  font-family: 'Intro Rust';
+  src: url('fonts/IntroRust-Base.woff2') format('woff2'),
+       url('fonts/IntroRustH2-Base2Line.woff2') format('woff'),
+       url('fonts/IntroRustL-Base2Line.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cutive Mono';
+  src: url('fonts/CutiveMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #000000;
   text-align: center;
@@ -27,16 +42,13 @@ body, html {
 
 @media only screen and (max-width: 600px) {
   #main-logo {
-    max-width: 120px;
+    max-width: 240px;
     min-width: 0;
     margin: 10px auto 5px auto;
     display: block;
   }
   header {
     padding: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .custom-header {
     flex-direction: column !important;
@@ -116,7 +128,7 @@ body, html {
 
 header {
   position: relative;
-  padding: 10px;
+  padding: 10px 0; /* Remove side padding */
 } 
 
 .custom-header {
@@ -141,6 +153,7 @@ header {
 h1 {
   color: white;
   text-transform: lowercase;
+  font-family: "Intro Rust", sans-serif;
   font-size: 1.2em;
   text-shadow: 1px 1px 8px rgb(255, 39, 197);
   text-align: center;
@@ -201,7 +214,22 @@ font-size: 0.8rem;
 }
 
 .bottomButtons {
-  margin-top: 100px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomButtons a {
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+}
+
+.bottomButtons button, .bottomButtons a, .bottomButtons button a {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 #about {
