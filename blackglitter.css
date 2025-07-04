@@ -79,9 +79,16 @@ body, html {
     text-decoration: none;
   }
 
-  button *, button a, .dropbtn *, .dropbtn a {
+  button a, .dropbtn a {
     text-decoration: none !important;
     color: inherit;
+    display: inline;
+  }
+
+  .buttonsNav a {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
   }
   .bottomButtons {
     margin-top: 40px;
@@ -135,7 +142,7 @@ h1 {
   color: white;
   text-transform: lowercase;
   font-size: 1.2em;
-  text-shadow: 2px 2px 9px #e31c80;
+  text-shadow: 1px 1px 8px rgb(255, 39, 197);
   text-align: center;
   display: inline-block;
   margin-top: 0px;
@@ -145,7 +152,7 @@ h2 {
   color: white;
   text-transform: lowercase;
   font-size: 1.2em;
-  text-shadow: 2px 2px 9px rgb(255, 39, 197);
+  text-shadow: 1px 1px 8px rgb(255, 39, 197);
   text-align: center;
   display: inline-block;
   margin-top: 0px;
@@ -155,7 +162,7 @@ h3 {
   color: white;
   text-transform: lowercase;
   font-size: 1em;
-  text-shadow: 2px 2px 9px rgb(255, 39, 197);
+  text-shadow: 1px 1px 8px rgb(255, 39, 197);
   text-align: center;
   display: inline-block;
   margin-top: 0px;
