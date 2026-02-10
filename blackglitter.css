@@ -152,7 +152,6 @@ header {
 
 h1 {
   color: white;
-  text-transform: lowercase;
   font-family: "Intro Rust", sans-serif;
   font-size: 1.2em;
   text-shadow: 1px 1px 8px rgb(255, 39, 197);
@@ -163,7 +162,6 @@ h1 {
 
 h2 {
   color: white;
-  text-transform: lowercase;
   font-size: 1.2em;
   text-shadow: 1px 1px 8px rgb(255, 39, 197);
   text-align: center;
@@ -173,7 +171,6 @@ h2 {
 
 h3 {
   color: white;
-  text-transform: lowercase;
   font-size: 1em;
   text-shadow: 1px 1px 8px rgb(255, 39, 197);
   text-align: center;
@@ -890,13 +887,32 @@ footer {
   font-size: 1.3rem;
   margin:0px;
 }
+
+.opportunity-header {
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 700px;
+  text-align: center;
+  flex: 1;
+  color: #ffffff;
+}
+
 .opportunity-title {
   font-size: rem;
-  font-weight: 500;
+  font-weight: 700;
   margin:2px;
   text-align: left;
   flex: 1;
   color: #000000;
+}
+
+.opportunity-info {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin:2px;
+  text-align: left;
+  flex: 1;
+  color: #767676;
 }
 
 .learn-more-btn {
