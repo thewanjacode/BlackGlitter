@@ -119,6 +119,10 @@ p {
   .bottomButtons {
     margin-top: 40px;
   }
+
+.contact {
+  display: inline-block;
+}
   .signature h2 {
     font-size: 1em;
     padding: 0 8px;
