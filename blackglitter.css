@@ -30,6 +30,13 @@ body, html {
   overflow-x: hidden;
 }
 
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
 #main-logo {
   max-width: 75%;
   min-width: 300px;
@@ -509,6 +516,65 @@ footer {
   height: 100%;
   display: inline-block;
 
+}
+
+/* Interview content styles */
+.interview-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #f2f2f2;
+    color:#000000; 
+    border-radius: 30px;
+}
+
+.interview-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color:#000000; 
+}
+.interview-intro {
+    padding: 20px;
+    margin: 20px;
+    color:#000000; 
+}
+.musician-bio {
+    color:#000000;
+    font-size: 0.6em ; 
+}
+
+.question {
+    font-weight: bold;
+    font-size: 1.2em;
+    color:#000000
+}
+
+.answer {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color:#000000;
+}
+
+/* Author and Musician section */
+.author, .musician {
+    display: flex;
+    align-items: center;
+      color:#000000; 
+}
+
+.author img, .musician img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.connect {
+  background-color: #000000;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
 
 /*BACKGROUNDS*/
