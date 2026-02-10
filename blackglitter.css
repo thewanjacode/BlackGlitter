@@ -949,13 +949,15 @@ img {
 }
 .opportunity-segment {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items:baseline;
   background-color: #ffffff;
   padding: 10px 10px;
+  line-height: 1.4;
   border-radius: 13px;
   margin: 20px 10px;
   font-family: "Montserrat", sans-serif;
+  box-shadow: 0 2px 8px #e31c80;
   color: #000000;
 }
 
@@ -966,7 +968,7 @@ img {
 
 .opportunity-header {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   max-width: 700px;
   text-align: center;
   flex: 1;
@@ -979,6 +981,7 @@ img {
   margin-right:10px;
   text-align: left;
   flex: 1;
+  font-style: italic;
   color: #000000;
 }
 
@@ -992,8 +995,8 @@ img {
 }
 
 .learn-more-btn {
-  background-color: transparent;
-  color: #e31c80;
+  background-color: #e31c80;
+  color: #fff;
   border: 1px solid #e31c80;
   padding: 6px 12px;
   border-radius: 9px;
@@ -1005,9 +1008,10 @@ img {
 }
 
 .learn-more-btn:hover {
-  background-color: #e31c80;
+  background-color: #000000;;
   border-color: rgb(199, 199, 199);
   color: #fff;
+  transform: scale(1.05);
 }
 
 .opportunity-list {
@@ -1021,7 +1025,7 @@ img {
 }
 
 .opportunity-deadline-badge {
- background-color: #ca2d7e; /* red */
+ background-color: #a5a5a5; /* red */
   color: rgb(255, 255, 255);
   padding: 5px 8px;
   border-radius: 12px;
